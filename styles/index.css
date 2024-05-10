@@ -1,3 +1,133 @@
-body{
-    background-color: rgb(255, 255, 255); /* agregarle color al fondo */
+/* CSS debe ser una hoja de estilos es cascada */
+/* Lo primero que debe ir son las importaciones */
+@import url('https://fonts.cdnfonts.com/css/zillah-modern'); /* link de importacion de el estilo de letra que tendremos */
+/* Establecer  las variables css */
+/* Paletas de colores, tipografias, medidas que se repitan constantemente */
+/* Selectores:
+            -Etiquetas
+            -Clases (se representa con un ".")
+            -Elementos
+            -ID: Sumamente especificos (cada elemento solo puede tener uno se representa con un "#")
+            -Pseudoclases: son elementos propios de CSS que me hacen referen cia a mi HTML pero como caracterizticas particulares se representan con un ":" 
+            -Pseudoelementos: "::" */
+ :root{
+    width: 100%; /*se le pone 100% para que se ajuste automaticamente al ancho del tamaño de mi pantalla*/
+    --tipografia:'Zillah Modern', sans-serif;
+    --colorFondo:#FFE5EB;
+    --colorClaro:#E4717A;
+    --colorTexto:#5C0010;
+    --colorContraste:#9E3B42;
+ }
+
+ *¨{ /* el* es un selector universal, aplica todos los estilos que pongas dentro en todo */
+    margin: 0; /* Margen externo */
+    padding: 0;/* Margen interno */
+ }
+
+ body{
+    background-color: var(--colorFondo); /*color de fondo*/
+    font-family: var(--tipografia); /*Tipo de funte de la letra*/
+    color: var(--colorTexto); /*Color de texto*/
+    overflow-x: hidden; /*quitar el scroll horizontal*/
+    box-sizing: border-box; /*Ajuste a mis dimensiones*/
+ }
+
+ /* ----------------HEADER---------------------- */
+header{
+    width: 100vw;/* vw: ancho de pantalla */
+    height: 100vh;/* vh: alto de pantalla */
 }
+
+.menuNav{
+    background-color: var(--colorClaro);
+    width: 100%;
+    height: 20%;
+}
+
+.listaMenu{
+    height: 100%;
+    display: flex; /* los elementos uno al lado de el otro */
+    justify-content: center; /*Centrar el comntenido en el eje x*/
+    align-items: center; /*Centrar el contenido en el eje y*/
+    gap: 50px; /*Separacion entre elementos*/
+    list-style: none;
+}
+
+.listaMenu a{
+    text-decoration: none; /*Quitar la decoracion del texto*/
+    color: var(--colorTexto);
+    font-size: 30px; /*tamaño de la latra*/
+    font-weight: bold; /*Hacer la letras mas negrilla*/
+}
+
+.listaMenu a:hover{
+    color: black;
+}
+
+.logo{
+    width: 50px;
+    height: 100px;
+}
+
+.baner{
+    border: solid royalblue;
+    width: 100%;
+    height: 80%;
+}
+
+.baner img{
+    width: 100%;
+    height: 100%;
+}
+ /* ----------------HEADER---------------------- */
+
+ /* ----------------MAIN---------------------- */
+ main{
+    border: solid rebeccapurple;
+    width: 100%;
+    height: auto;
+ }
+
+ .Seccion1{
+    border: 3px solid green;
+    width: 80%;
+ }
+
+ #div-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+ }
+
+ #div-video iframe{
+    width: 50%;
+ }
+
+ #div-video p{
+    width: 50%;
+ }
+
+ .Seccion2{
+    border: 3px solid blue;
+    width: 80%;
+ }
+
+ .contenedorimg{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+ }
+
+ .Titulo{
+    text-align: center;
+    text-transform: uppercase; /*poner el texto en mayuscula*/
+    margin: 20px 0px;
+ }
+ /* ----------------MAIN---------------------- */
+
+ /* ----------------FOOTER ---------------------- */
+
+ /* ----------------FOOTER ---------------------- */

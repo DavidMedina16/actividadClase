@@ -36,7 +36,7 @@
     <header>
         <!-- ACA IRA NUESTRO MENU O BANER O LO QUE QUERAMOS EN NUESTRO ENCABEZADO -->
         <!-- MENU DE NAVEGACION -->
-        <nav> 
+        <nav class="menuNav"> 
             <!-- siempre son listas : (order list "ol") o (unorder list "ul") -->
             <!-- cada lista tiene su elemento etiqueta "li" -->
             <!-- <ol>
@@ -47,32 +47,30 @@
 
             <hr> <!-- Etiqueta de separacion -->
 
-            <ul>
+            <ul class="listaMenu">
                 <!-- le etiqueta a es para poder darle click y redireccionar a otra -->
                 <li><a href="#">Seccion1</a></li> 
                 <li><a href="#">Seccion2</a></li>
-                <li><a href="#"><img src="./assets/img1.jpg" alt=""></a></li> <!-- img es la etiqueta para poner una imagen ; donde src: es la ruta de la imagen y alt: es el texto que describe la imagen-->
+                <li><a href="#"><img class="logo" src="./assets/img1.jpg" alt=""></a></li> <!-- img es la etiqueta para poner una imagen ; donde src: es la ruta de la imagen y alt: es el texto que describe la imagen-->
                 <li><a href="#">Seccion4</a></li>
                 <li><a href="#">Seccion5</a></li>
             </ul>
         </nav>
 
-        <hr>
-
-        <section>
-            <img src="./assets/img2.jpg" alt="">
+        <section class="baner">
+            <img src="./assets/img2.jpg" alt="bane-libros">
         </section>
     </header>
 
     <main>
         <!-- ACA VA EL CONTENIDO DE NUESTRA PAGINA -->
         <!-- Seccion informativa 1 -->
-        <section>
-            <h1>LIBRERIA ITCA</h1> <!--h1 es la etiqueta de titulo principal(solo debe haber una de ella en cada pagina)-->
+        <section class="Seccion1">
+            <h1 class="Titulo">LIBRERIA ITCA</h1> <!--h1 es la etiqueta de titulo principal(solo debe haber una de ella en cada pagina)-->
             <h2></h2> <!--h2 es la etiqueta para los titulos de cada seccion-->
             <!-- le etiquetaq DIV (NO SEMANTICA) es de contenedor de elementos-->
             <!-- iframe : etiquetas que nos permite meter contenido de otro sitio web -->
-            <div>
+            <div class="Seccion-Informativa1" id="div-video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/81PbxT5yoKo?si=OJUMoL83TAEpunvz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda modi error exercitationem dolore nulla vitae saepe eveniet. Quisquam facilis esse saepe eligendi ipsam eos, quia debitis nostrum aliquam, iste repudiandae.</p> <!--la etiqueta p es para agregar parrafos-->
             </div>
@@ -81,14 +79,14 @@
          <hr>
 
          <!-- Seccion inofrmativa 2 -->
-         <section>
-            <div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+         <section class="Seccion2">
+            <div class="contenedorimg">
+                <img src="./assets/img1.jpg" alt="imagen libros">
+                <img src="./assets/img1.jpg" alt="imagen libros">
+                <img src="./assets/img1.jpg" alt="imagen libros">
+                <img src="./assets/img1.jpg" alt="imagen libros">
+                <img src="./assets/img1.jpg" alt="imagen libros">
+                <img src="./assets/img1.jpg" alt="imagen libros">
             </div>
          </section>
          <hr>
