@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- METADATOS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David Parra Medina">
+    <meta name="keywords" content="practica, loros, pajaros">
+    <meta name="description" content="actividad practica css - flexbox y grid">
+
+    <!-- LINKS DE VINCULACIONES (ESTILOS, iCONO DE NAVEGADOR) -->
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="shortcut icon" href="./assets/Logo/favicon.png" type="image/x-icon">
+
+    <title>Practica 2</title>
+</head>
+<body>
+    <!-- INICIO HEADER - ENCABEZADO -->
+    <header>
+        <nav class="menuNavegacion">
+            <!-- NUESTRO LOGO -->
+            <div class="logo">
+                <a href="#">
+                    <img src="./assets/Logo/logo.jpg" alt="Logo de loritos">
+                    <p class="p-logo"> Looking for <span class="span-logo"> Freedom </span></p>
+                </a>
+            </div>
+            <!-- LISTA - MENU DE NAVEGACION -->
+            <ul class="listaMenu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Aliados</a></li>
+                <li><a href="#">Contactenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+    <!-- INICIO MAIN - CONTENIDO DE NUESTRA PAGINA -->
+    <main>
+        <!-- SECCION DE CONTENIDO PRINCIPAL -->
+        <section class="contenedorPrincipal">
+            <h1>Proyecto : Tomemos conciencia</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, impedit.</p>
+
+            <!-- article : etiqueta para contenedores que se relacionan entre si -->
+            <article class="contenedorImagenes">
+                <div class="imagenes img1">
+                    <img src="./assets/Images/img1.png" alt="img-proyecto">
+                    <div class="parrafo-img1">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum natus, molestias soluta nesciunt debitis assumenda deserunt excepturi dolor tenetur magnam tempora error quaerat eveniet delectus laborum sed? Ea, repudiandae ex.</p>
+                    </div>
+                </div>
+                <div class="imagenes img2">
+                    <img src="./assets/Images/img2.png" alt="img-proyecto">
+                    <div class="parrafo-img2">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum natus, molestias soluta nesciunt debitis assumenda deserunt excepturi dolor tenetur magnam tempora error quaerat eveniet delectus laborum sed? Ea, repudiandae ex.</p>
+                    </div>
+                </div>
+                <div class="imagenes img3">
+                    <img src="./assets/Images/img3.png" alt="img-proyecto">
+                    <div class="parrafo-img3">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum natus, molestias soluta nesciunt debitis assumenda deserunt excepturi dolor tenetur magnam tempora error quaerat eveniet delectus laborum sed? Ea, repudiandae ex.</p>
+                    </div>
+                </div>
+                <div class="imagenes img4">
+                    <img src="./assets/Images/img4.png" alt="img-proyecto">
+                    <div class="parrafo-img4">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum natus, molestias soluta nesciunt debitis assumenda deserunt excepturi dolor tenetur magnam tempora error quaerat eveniet delectus laborum sed? Ea, repudiandae ex.</p>
+                    </div>
+                </div>
+                <div class="imagenes img5">
+                    <img src="./assets/Images/img7.png" alt="img-proyecto">
+                    <div class="parrafo-img5">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum natus, molestias soluta nesciunt debitis assumenda deserunt excepturi dolor tenetur magnam tempora error quaerat eveniet delectus laborum sed? Ea, repudiandae ex.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- SECCION DE PRACTICA FLEXBOX -->
+
+        <section class="contenedorFlex">
+            <div class="flexHijo">Caja 1</div>
+            <div class="flexHijo">Caja 2</div>
+            <div class="flexHijo">Caja 3</div>
+            <div class="flexHijo">Caja 4</div>
+            <div class="flexHijo">Caja 5</div>
+        </section>
+    </main>
+
+    <hr>
+    <!-- INICIO FOOTER - PIE DE PAGINA -->
+    <footer>
+        <p>Practica de desarrollo creada por &copy; David Parra Medina</p> <!-- (&copy;) es el logo de copyrigth-->
+    </footer>
+</body>
+</html>
