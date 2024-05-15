@@ -1,0 +1,52 @@
+/* IMPORTAMOS FUNETES */
+@import url('https://fonts.cdnfonts.com/css/ysabeau-sc');
+@import url('https://fonts.cdnfonts.com/css/quito');
+
+/* ESTABLECEMOS LAS VARIABLES EN NUESTRO CSS(PALETA DE COLORES, TIPOGRAFIA) */
+/* root : hace referencia a raiz el cual es el archivo raiz que es el documento HTML, la etiqueta HTML */
+:root{
+    /* paleta de colores */
+    --colorFondo:#D8C37F;
+    --colorEnfasis1:#A4AE20;
+    --colorEnfasis2:#C57023;
+    --colorEnfasis3:#7B361A;
+    --colorText:#d9d09e85;
+    --colorText2:#19160A;
+
+    /* Fuentes */
+    --textTitle:'Ysabeau SC', sans-serif;
+    --textContent:'Quito', sans-serif;
+}
+
+/* CONDICIONES O ESTILOS INICIALES DE MI PAGINA */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--colorFondo);
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+
+/*----------------------- HEADER -----------------------*/
+header{
+    width: 100%;
+    height: 100px;
+    border: solid red;
+    background-color: var(--colorEnfasis3);
+}
+
+.menuNavegacion{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--colorEnfasis3);
+}
+/*----------------------- MAIN -----------------------*/
+/*----------------------- FOOTER -----------------------*/
