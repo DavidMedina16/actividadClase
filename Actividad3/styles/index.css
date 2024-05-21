@@ -1,0 +1,91 @@
+/* VARIABLES */
+:root{
+    --colorFondo: beige;
+    --colorClaro: lightsalmon;
+    --colorContraste: rgba(14, 138, 127, 0.911);
+    --tipografia: Arial, Helvetica, sans-serif;
+}
+
+/* CONDUCUIBES INICIALES */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--colorFondo);
+    font-family: var(--tipografia);
+    font-size: 25px;
+    overflow-x: hidden;
+}
+
+/* ------------------------ HEADER ------------------------ */
+header{
+    border: solid red;
+    height: 100vh;
+    width: 100vw;
+}
+
+.tituloPrincipal{
+    height: 150px;
+    width: 100%;
+    background-color: var(--colorContraste);
+    display: grid;
+    place-content: center;
+    color: var(--colorFondo);
+}
+
+.contenedorSlider{
+    border: solid 5px var(--colorContraste);
+    width: 1000px;
+    height: 500px;
+    margin: 100px auto; /* margin : auto - centrar contenedores*/
+    overflow-x: scroll;
+}
+
+.slider{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* NOMBRE QUE SE CONECTA OCN EL KEYFRAME */
+    animation-name: slide;
+    /* TIEMPO DE DURACION */
+    animation-duration: 5s;
+    /* CUANTAS VECES QUEREMOS QUE SE REPITA LA ANIMACION */
+    animation-iteration-count: infinite;
+    /* FORMA EN QUE QUEREMOS QUE SE DE EL ALGORITMO */
+    animation-timing-function: ease-in-out;
+}
+
+/* PONDREMOS LA FUNCION DE ANIMACION */
+/* 0% - 50% - 100% */
+/* FROM - TO */
+
+@keyframes deslizar {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(100%);
+    }
+}
+
+.contenedorSlider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ------------------------ MAIN ------------------------ */
+/* ------------------------ FOOTER ------------------------ */
+footer{
+    height: 150px;
+    width: 100%;
+    background-color: var(--colorContraste);
+    /* ALTERNATIVA PARA CENTRAR UN ELEMENTO */
+    display: grid;
+    /* CENTRAR X Y Y */
+    place-content: center;
+    color: var(--colorFondo);
+}
