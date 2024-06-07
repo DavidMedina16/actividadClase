@@ -22,7 +22,6 @@ body{
 
 /* ------------------------ HEADER ------------------------ */
 header{
-    border: solid red;
     height: 100vh;
     width: 100vw;
 }
@@ -36,10 +35,16 @@ header{
     color: var(--colorFondo);
 }
 
+.tituloPrincipal:hover{
+    background-color: brown;
+    color: green;
+    transform: scale(1.2);
+}
+
 .contenedorSlider{
     border: solid 5px var(--colorContraste);
-    width: 1000px;
-    height: 500px;
+    width: 75%;
+    height: 65vh;
     margin: 100px auto; /* margin : auto - centrar contenedores*/
     overflow-x: scroll;
 }
@@ -66,6 +71,9 @@ header{
     from{
         transform: translateX(0%);
     }
+    50%{
+        transform: translateX(-150%);
+    }
     to{
         transform: translateX(100%);
     }
@@ -78,6 +86,37 @@ header{
 }
 
 /* ------------------------ MAIN ------------------------ */
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.contenido{
+    border: solid 5px var(--colorContraste);
+    width: 75%;
+    height: 65vh;
+    margin-bottom: 100px;
+}
+
+.tituloSecundario{
+    text-align: center;
+}
+
+.imgParrafo{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    padding: 15px;
+}
+
+.imgParrafo img{
+    width: 100%;
+    height: 100%;
+}
+.imgParrafo p{
+    width: 100%;
+    height: 100%;
+}
 /* ------------------------ FOOTER ------------------------ */
 footer{
     height: 150px;
