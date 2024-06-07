@@ -7,6 +7,6 @@ let numero2;
 let pantalla;
 
 // asignarle a mis variables los elementos html
-numero1 = document.getElementById('numero1');
-numero2 = document.getElementById('numero2');
+numero1 = document.getElementById('numero1').value;
+numero2 = document.getElementById('numero2').value;
 pantalla = document.getElementById('pantalla');
